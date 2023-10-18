@@ -1,0 +1,12 @@
+# @name user
+GET http://localhost:3333/users 
+
+###
+
+POST http://localhost:3333/users 
+Content-Type: application/json
+
+{
+  "name": "Vinícius Lima",
+  "email": "vinicius@email.com.br"
+}

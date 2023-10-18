@@ -32,3 +32,18 @@ Este repositório é utilizado para as aulas de Fundamentos do Node.js do curso 
 - 200 => OK, A requisição foi um sucesso (status code padrão)
 - 201 => CREATED, a requisição foi um sucesso e o recurso foi criado
 - 404 => NOT FOUND, significa que a rota requisitada não existe
+
+**Middlewares:**
+- São intermediadores, isto é, funções, que servem justamente para tratar, transformar dados. Recebem sempre como parâmetro o `request` e o `response`.
+
+### Fundamentos de streams no Node
+
+**A ideia da stream**
+- Conseguir obter pequenas partes de algum recurso e já poder trabalhar com aquele dado mesmo sem ler o arquivo por completo.
+- Ex: Importação de clientes via CSV (Excel) => `POST /upload import.csv` (1GB de arquivo), então vamos lendo por exemplo 10MB de arquivo e já processando aos poucos enquanto ocorre ainda o upload simultaneamente. 
+
+**Tipos de streams no Node**
+Os principais tipos são Readable, Writable, Transform e Duplex (Readable & Writable em uma só stream).
+
+**O que é o buffer?**
+- É uma representação do espaço na memória do computador usado para movimentar dados de forma muito rápida, dessa forma, os dados armazenados no buffer são guardados ali para logo serem tratados/enviados para algum lugar e posteriormente removidos. É uma maneira conseguirmos ler e salvar dados na memória de forma muito performática (trabalha com dados binários).
