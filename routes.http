@@ -10,3 +10,7 @@ Content-Type: application/json
   "name": "Vinícius Lima",
   "email": "vinicius@email.com.br"
 }
+
+###
+
+DELETE http://localhost:3333/users/ab5557ef-e508-47cb-b5d4-58c137320546

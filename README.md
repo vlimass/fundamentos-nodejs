@@ -36,6 +36,11 @@ Este repositório é utilizado para as aulas de Fundamentos do Node.js do curso 
 **Middlewares:**
 - São intermediadores, isto é, funções, que servem justamente para tratar, transformar dados. Recebem sempre como parâmetro o `request` e o `response`.
 
+**Formas de requisições no back-end**
+- Query Parameters => Usados em URLs Stateful, tais como filtros, paginação (não obrigatórios). Ex: `http://localhost:3333/users?userId=1&name=Diego`
+- Route Parameters => Usados para identificação de recurso. Ex: `GET http://localhost:3333/users/1`
+- Request Body => Usado para envio de informações de um formulário (o único que pode enviar informações sensíveis pois NÃO vai na URL- passam pelo protocolo HTTPs). Ex: `POST http://localhost:3333/users` com o JSON enviado pelo body `{"name": "Diego", email: "diego@email.com.br"}`.
+
 ### Fundamentos de streams no Node
 
 **A ideia da stream**
