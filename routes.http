@@ -1,5 +1,6 @@
 # @name user
 GET http://localhost:3333/users 
+  ?search=
 
 ###
 
@@ -7,8 +8,18 @@ POST http://localhost:3333/users
 Content-Type: application/json
 
 {
-  "name": "Vinícius Lima",
+  "name": "Vinicius Lima",
   "email": "vinicius@email.com.br"
+}
+
+###
+
+PUT http://localhost:3333/users/64b0b3c1-cd5c-4fe5-8a1e-274c9d631d27
+Content-Type: application/json
+
+{
+  "name": "Clarice Ramos",
+  "email": "cla@email.com.br"
 }
 
 ###
